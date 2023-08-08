@@ -5,7 +5,6 @@ import pandas as pd
 
 search_term_input = input('Please enter a search term: ')
 search_terms = search_term_input.replace(' ','+')
-print(search_terms)
 
 payload = {'term': search_terms, 'entity':'album'}
 url = 'https://itunes.apple.com/search?'
