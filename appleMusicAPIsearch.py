@@ -1,6 +1,5 @@
 import requests
 import json
-from bs4 import BeautifulSoup
 import pandas as pd
 
 search_term_input = input('Please enter a search term: ')
