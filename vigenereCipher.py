@@ -10,10 +10,7 @@ def encrypt_letter(char, key):
     #first we find the index of the letter that needs to be encrypted
     index = alphabet.index(char)
     #the new index for the encrypted letter will be the current index, plus the shift
-    new_index = index + calculate_shifts(key)
-    # account for if the shift takes the new index out of range of the alphabet
-    if new_index > 25:
-        new_index = new_index % 26
+    new_index = (index + calculate_shifts(key)) % 26
     new_char = alphabet[new_index]
     #return the encrypted character
     return new_char
