@@ -21,3 +21,4 @@ music_search_df = pd.DataFrame(data=search_results, columns = ['Album','Artist',
 
 for x in range(len(music_search_df)):
 	print(f'Artist: {music_search_df.loc[x].at["Artist"][0]} - Album: {music_search_df.loc[x].at["Album"]} - Track Count: {music_search_df.loc[x].at["Track Count"][0]}')
+	
